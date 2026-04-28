@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/home">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome_tx">Nome: </label>
+            <input type="text" name="nome" id="nome_tx" required placeholder="Digite seu nome">
+            <label for="email_em">Email: </label>
+            <input type="email" name="email" id="email_em" placeholder="Digite seu email">
+        </fieldset>
+        <fieldset>
+            <legend>Tecnologia Principal</legend>
+            <label for="tecnology">Tecnologias:</label>
+            <input list="tecnologies" name="tecnology">
+            <datalist id="tecnologies">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+                <option value="React">
+                <option value="Vue">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo de Projeto</legend>
+            <label for="choose1">Em Grupo</label>
+            <input type="radio" name="choose" id="choose1" value="emgrupo">
+            <label for="choose2">individual</label>
+            <input type="radio" name="choose" id="choose2" value="individual">
+        </fieldset>
+        <fieldset>
+            <legend>Termos de Uso</legend>
+            <label for="Term">Aceite nossos termos de uso:</label>
+            <input type="checkbox" name="Term" id="Term" required>
+        </fieldset>
+        <fieldset>
+            <legend>Descrição</legend>
+            <textarea name="desc" id="desc" maxlength="200"></textarea>
+        </fieldset>
+        <input type="submit" placeholder="Enviar">
+    </form>
+</body>
+</html>

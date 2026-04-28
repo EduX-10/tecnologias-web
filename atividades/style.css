@@ -1,0 +1,105 @@
+/* Configurações Gerais - Reseta estilos básicos para consistência */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Container do Formulário */
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Agrupamento com Fieldset - Capítulo 16 do seu livro [cite: 106] */
+fieldset {
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: #007bff;
+}
+
+/* Labels e Inputs - Estilização de blocos [cite: 101] */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[list] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura  */
+}
+
+/* Estilo para Radio e Checkbox */
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.inline-group input {
+    margin: 0;
+}
+
+.inline-group label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Textarea - Ajuste de redimensionamento [cite: 106] */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botão de Envio - Efeitos Visuais [cite: 103, 106] */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição suave [cite: 103] */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Validação Visual Básica */
+input:required {
+    border-left: 4px solid #dc3545;
+}
+
+input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}

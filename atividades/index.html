@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+     <header>
+        <h1>Meu Primeiro Site HTML</h1>
+        <p>Exercício Prático - Tags Semânticas e Tabelas</p>
+     </header>
+
+    <!-- NAVEGAÇÃO -->
+    <!-- utilizar links com âncora-->
+     <nav>
+        <a href="#Sobre">Sobre</a>
+        <a href="#Serviços">Serviços</a>
+        <a href="#Horários">Horários</a>
+     </nav>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main>
+        <!-- Seção Sobre -->
+        <section id="Sobre">
+            <h1>Sobre Mim</h1>
+            <h2>Quem sou eu?</h2>
+            <div>
+                <p>Olá! Meu nome é <strong>João Silva</strong>, sou aluno do curso de Ciência da Computação. Este é meu 
+                primeiro exercício com <em>HTML semântico</em>.</p>
+            </div>
+            <div>
+                <p>Estou aprendendo sobre:</p>
+            </div>
+            <ul>
+                <li>Tags semânticas (header, nav, main, section, article, aside, footer)</li>
+                <li>Listas ordenadas e não ordenadas</li>
+                <li>Tabelas estruturadas</li>
+                <li>Links e imagens</li>
+            </ul>
+            <div class="destaque">
+                <h2>Objetivo do Exercício</h2>
+                <p>Praticar a criação de uma página HTML completa utilizando as principais tags
+                e mantendo a semântica correta do documento.</p>
+            </div>
+        </section>
+        <!-- Seção Serviços -->
+         <section id="Serviços">
+            <h1>Meus Serviços</h1>
+            <h2>O que eu ofereço</h2>
+            <ol>
+                <li><strong>Desenvolvimento Web</strong> - Criação de sites responsivos</li>
+                <li><strong>Manutenção</strong> - Atualização e correção de sites existentes</li>
+                <li><strong>Consultoria</strong> - Orientação sobre melhores práticas</li>
+            </ol>
+         </section>
+        <!-- Seção Horários - TABELA -->
+        <section id="Horários">
+            <h1>Tabela de Horários</h1>
+            <p>2º período - Ciência da Computação</p>
+            <table>
+            <!-- Tabela de horários aqui -->
+                <thead>
+                    <tr>
+                        <th>Dia da Semana</th>
+                        <th>Horário</th>
+                        <th>Disciplina</th>
+                        <th>Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>ACEx I</td>
+                        <td>Eliomar</td>
+                    </tr>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>18:30 - 20:10</td>
+                        <td>Banco de Dados</td>
+                        <td>Tiago</td>
+                    </tr>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>20:20 - 22:00</td>
+                        <td>Tecnologias Web</td>
+                        <td>Fabiano</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>16:50 - 18:30</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>18:30 - 20:10</td>
+                        <td>Cálculo I</td>
+                        <td>Esdriane</td>
+                    </tr>
+                    <tr>
+                        <td>Terça-feira</td>
+                        <td>20:20 - 22:00</td>
+                        <td>Banco de Dados</td>
+                        <td>Tiago</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><strong>Finalizar o horário...</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>&copy; 2026 João Silva - Todos os direitos reservados</p>
+        <p><small>Criado como exercício prático de HTML</small></p>
+    </footer>
+</body>
+</html>
