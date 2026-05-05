@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Futebol Brasileiro - Ranking de Títulos</h2>
+        <p>Os maiores campeões nacionais do Brasil</p>
+    </header>
+    <nav>
+        <h3>Menu de Navegação</h3>
+        <ul>
+            <li><a href="#rank">Ranking de Títulos</a></li>
+            <li><a href="#cadastro">Cadastrar Jogador</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section id="rank">
+            <h2>Classificação de Títulos Nacionais</h2>
+            <p>Ranking dos clubes brasileiros com mais títulos do Campeonato Brasileiro</p>
+            <table cellpadding="10" cellspacing="0" border="1">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <th>Escudo</th>
+                        <th>Time</th>
+                        <th>Títulos Brasileiros</th>
+                        <th>Copa do Brasil</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td><strong>1º</strong></td>
+                        <td><img src="../img/maiorCampeao.png" alt="palmeiras"></td>
+                        <td><strong>Palmeiras</strong></td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>16</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>2º</strong></td>
+                        <td><img src="../img/time2.png" alt="flamengo"></td>
+                        <td><strong>Flamengo</strong></td>
+                        <td>8*</td>
+                        <td>5</td>
+                        <td>13</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>3º</strong></td>
+                        <td><img src="../img/time3.png" alt="corinthians"></td>
+                        <td><strong>Corinthians</strong></td>
+                        <td>7</td>
+                        <td>4</td>
+                        <td>11</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>4º</strong></td>
+                        <td><img src="../img/time4.png" alt="cruzeiro"></td>
+                        <td><strong>Cruzeiro</strong></td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>10</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>5º</strong></td>
+                        <td><img src="../img/time5.png" alt="santos"></td>
+                        <td><strong>Santos</strong></td>
+                        <td>8</td>
+                        <td>1</td>
+                        <td>9</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>6º</strong></td>
+                        <td><img src="../img/time7.png" alt="sao paulo"></td>
+                        <td><strong>São Paulo</strong></td>
+                        <td>6</td>
+                        <td>1</td>
+                        <td>7</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>7º</strong></td>
+                        <td><img src="../img/time6.png" alt="gremio"></td>
+                        <td><strong>Grêmio</strong></td>
+                        <td>2</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>8º</strong></td>
+                        <td><img src="../img/time9.png" alt="vasco"></td>
+                        <td><strong>Vasco da Gama</strong></td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>9º</strong></td>
+                        <td><img src="../img/time10.png" alt="fluminense"></td>
+                        <td><strong>Fluminense</strong></td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                    <tr align="center">
+                        <td><strong>10º</strong></td>
+                        <td><img src="../img/time8.png" alt="atletico mineiro"></td>
+                        <td><strong>Atlético Mineiro</strong></td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr align="center">
+                        <td colspan="6" ><em>*87 é do Sport</em></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+        <section id="cadastro">
+            <h2>Cadastro de Jogador</h2>
+            <p>Preencha todos os campos abaixo para cadastrar um novo jogador</p>
+            <form action="/cadastro" method="POST" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="nome">Nome Completo:</label><br>
+                        <input type="text" name="nome" id="nome" required>
+                    </p>
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" name="senha" id="senha">
+                    </p>
+                    <p>
+                        <label for="dataNasc">Data de Nascimento:</label><br>
+                        <input type="date" name="dataNasc" id="dataNasc">
+                    </p>
+                    <p>
+                        <label for="idade">Idade:</label><br>
+                        <input type="number" name="idade" id="idade" value="25">
+                    </p>
+                    <p>
+                        <label for="altura">Altura (em metros):</label><br>
+                        <input type="number" step="0.01" name="altura" id="altura" value="1.75">
+                    </p>
+                    <p>
+                        <label for="peso">Peso (Kg):</label>
+                        <input type="range" name="peso" id="peso" min="0" max="75" value="30">
+                        <output>75</output> Kg
+                    </div>
+                    <p>
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="XX-XXXXX-XXXX">
+                    </p>
+                    <p>
+                        <label for="site">Site Pessoal:</label>
+                        <input type="url" name="site" id="site" placeholder="https://exemplo.com">
+                    </p>
+                    <p>
+                        <label for="color">Cor Favorita:</label>
+                        <input type="color" name="color" id="color" value="red">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+                    <p>
+                        <label for="clubes">Selecione o Clube:</label><br>
+                        <select name="clubes" id="clubes">
+                            <option value="">-- Escolha um clube --</option>
+                            <option value="palmeiras">Palmeiras</option>
+                            <option value="flamengo">Flamengo</option>
+                            <option value="corinthians">Corinthians</option>
+                            <option value="cruzeiro">Cruzeiro</option>
+                            <option value="santos">Santos</option>
+                            <option value="sao_paulo">São Paulo</option>
+                            <option value="gremio">Grêmio</option>
+                            <option value="vasco_da_gama">Vasco da Gama</option>
+                            <option value="fluminense">Fluminense</option>
+                            <option value="atletico_mineiro">Atlético Mineiro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="posicao">Posição Principal:</label><br>
+                        <select name="posicao" id="posicao" size="4">
+                            <option value="zagueiro">Zagueiro</option>
+                            <option value="lateral">Lateral</option>
+                            <option value="meio_campo">Meio Campo</option>
+                            <option value="atacante">Atacante</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="numCamisa">Número da Camisa:</label><br>
+                        <input type="number" name="numCamisa" id="numCamisa">
+                    </p>
+                    <p>
+                        <label for="salario">Salário (R$):</label><br>
+                        <input type="number" name="salario" id="salario" step="0.01" placeholder="Ex: 50000.00">
+                    </p>
+                    <p>
+                        <label for="venc">Data de Vencimento do Contrato:</label><br>
+                        <input type="date" name="venc" id="venc">
+                    </p>
+                    <p>
+                        <label for="horario">Horário de Treino Preferido:</label><br>
+                        <input type="time" name="horario" id="horario">
+                    </p>
+                    <p>
+                        <label for="dataHora">Data e Hora da Última Partida</label><br>
+                        <input type="datetime-local" name="dataHora" id="dataHora">
+                    </p>
+                    <p>
+                        <label for="mes_contratacao">Mês/Ano de Contratação:</label><br>
+                        <input type="month" name="mes_contratacao" id="mes_contratacao">
+                    </p>
+                    <p>
+                        <label for="semana">Semana de Folga</label><br>
+                        <input type="week" name="semana" id="semana">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Características</legend>
+                    <p>
+                        <h3>Pé Dominante</h3>
+                        <input type="radio" name="dominante" id="destro" checked>
+                        <label for="destro">Destro</label><br>
+                        <input type="radio" name="dominante" id="canhoto">
+                        <label for="canhoto">Canhoto</label><br>
+                        <input type="radio" name="dominante" id="ambidestro">
+                        <label for="ambidestro">Dominante</label><br>
+                    </p>
+                    <p>
+                        <h3>Habilidades Especiais</h3>
+                        <input type="checkbox" name="falta" id="falta">
+                        <label for="falta">Cobrador de Faltas</label><br>
+                        <input type="checkbox" name="penalti" id="penalti">
+                        <label for="penalti">Cobrador de Pênaltis</label><br>
+                        <input type="checkbox" name="cap" id="cap">
+                        <label for="cap">Potencial Capitão</label><br>
+                        <input type="checkbox" name="selecao" id="selecao">
+                        <label for="selecao">Convocável para Seleção</label><br>
+                    </p>
+                    <p>
+                        <label for="bio">Bibliografia do Jogador</label><br>
+                        <textarea name="bio" id="bio" placeholder="Escreva uma breve bibliografia do jogador..."></textarea>
+                    </p>
+                    <p>
+                        <label for="foto">Upload de Foto do Jogador</label><br>
+                        <input type="file" name="foto" id="foto">
+                    </p>
+                    <p>
+                        <label for="est">Pesquisar Estatísticas</label><br>
+                        <input type="search" name="est" id="est" placeholder="Digite para buscar">
+                    </p>
+                </fieldset>
+                <input type="submit" name="envio" id="envio" value="Cadastrar Jogador">
+                <input type="reset" name="limpeza" id="limpeza" value="Limpar Formulário">
+                <button name="ajuda" id="ajuda">Ajuda</button>
+            </form>
+        </section>
+        <hr>
+        <footer align="center">
+            <h3>Ciência da Computação - IFBA</h3>
+            <small>&copy; 2026.1 - Todos os direitos reservados</small>
+        </footer>
+    </main>
+</body>
+</html>
