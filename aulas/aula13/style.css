@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+header {
+    height: 20vh;
+    background-color: blueviolet;
+
+}
+
+main {
+    height: 70vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    height: 550px;
+    min-width: 300px;
+    max-width: 300px;
+    border: 1px solid lightseagreen;
+    border-radius: 20px;
+    background-color:white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 80%;
+}
+
+footer {
+    height: 10vh;
+    background-color: cadetblue;
+}
